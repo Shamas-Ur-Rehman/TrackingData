@@ -165,10 +165,15 @@
       </section>
 
       <!-- Servicios -->
-      <section id="servicios" class="py-16 bg-slate-900/50">
+      <section
+        id="servicios"
+        class="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-90"
+      >
         <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-5xl font-extrabold mt-20">
+          <!-- Header -->
+
+          <div class="text-center mb-14 max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-extrabold pt-16">
               Nuestros Servicios y Productos
             </h2>
             <p class="text-gray-400 mt-2">
@@ -176,535 +181,103 @@
             </p>
             <div class="mt-4 h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
           </div>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
-          >
-            <div
-              class="glass-card p-6 rounded-xl text-center cursor-pointer"
-              data-target="#gtm-detail"
-            >
-              <h3 class="text-lg font-semibold">Google Tag Manager</h3>
-            </div>
-            <div
-              class="glass-card p-6 rounded-xl text-center cursor-pointer"
-              data-target="#ga-detail"
-            >
-              <h3 class="text-lg font-semibold">Google Analytics</h3>
-            </div>
-            <div
-              class="glass-card p-6 rounded-xl text-center cursor-pointer"
-              data-target="#ads-detail"
-            >
-              <h3 class="text-lg font-semibold">Plataformas Publicitarias</h3>
-            </div>
-            <!-- SEO Button -->
-            <div
-              class="glass-card p-6 rounded-xl text-center cursor-pointer"
-              data-target="#seo-detail"
-            >
-              <h3 class="text-lg font-semibold">SEO</h3>
-            </div>
-            <div
-              class="glass-card p-6 rounded-xl text-center cursor-pointer"
-              data-target="#crm-detail"
-            >
-              <h3 class="text-lg font-semibold">CRM & Lead Intelligence</h3>
-            </div>
-            <div
-              class="glass-card p-6 rounded-xl text-center cursor-pointer"
-              data-target="#asesorias-detail"
-            >
-              <h3 class="text-lg font-semibold">Asesorías Personalizadas</h3>
-            </div>
-            <div
-              class="glass-card p-6 rounded-xl text-center cursor-pointer"
-              data-target="#capacitaciones-detail"
-            >
-              <h3 class="text-lg font-semibold">Capacitaciones</h3>
-            </div>
-            <div
-              class="glass-card p-6 rounded-xl text-center cursor-pointer"
-              data-target="#productos-detail"
-            >
-              <h3 class="text-lg font-semibold">Productos</h3>
-            </div>
-          </div>
 
-          <div id="service-details-container" class="mt-12">
-            <div id="gtm-detail" class="service-detail">
-              <div class="glass-card p-8 rounded-xl">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">
-                  Google Tag Manager
-                </h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Setup e Implementación:</strong> Configuramos tu
-                      GTM desde cero o migramos tu setup actual sin pérdida de
-                      datos.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Tracking Web Avanzado:</strong> Implementamos
-                      tracking detallado de eventos, micro-conversiones y el
-                      customer journey.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Automatización y Triggers:</strong> Desarrollamos
-                      activadores inteligentes para un tracking dinámico y de
-                      máximo rendimiento.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Integraciones Clave:</strong> Conectamos GTM con
-                      tus plataformas de Ads, Analytics y CRM para centralizar
-                      tu ecosistema.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>E-commerce y Retail:</strong> Aplicamos medición
-                      avanzada para E-commerce, optimizando el funnel de ventas
-                      y remarketing.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Optimización y Soporte:</strong> Damos soporte y
-                      auditoría continua para garantizar el rendimiento y la
-                      correcta operación de GTM.</span
-                    >
-                  </li>
-                </ul>
-                <p
-                  class="mt-4 text-cyan-300 cursor-pointer hover:text-cyan-100 font-semibold open-bot2-chat"
-                >
-                  » ¿Preguntas sobre este servicio? Chatea con nuestro asistente
-                  técnico.
-                </p>
-              </div>
+          <!-- Cards Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Google Tag Manager -->
+            <div
+              class="glass-card p-8 rounded-2xl bg-slate-800/60 backdrop-blur-md hover:bg-slate-800/80 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-bold text-cyan-400 mb-4">
+                Google Tag Manager
+              </h3>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>✓ Setup e Implementación desde cero o migración.</li>
+                <li>✓ Tracking Web Avanzado de eventos y conversiones.</li>
+                <li>✓ Automatización y triggers inteligentes.</li>
+                <li>✓ Integraciones con Ads, Analytics y CRM.</li>
+                <li>✓ E-commerce tracking avanzado y remarketing.</li>
+                <li>✓ Optimización y soporte continuo.</li>
+              </ul>
             </div>
-            <div id="ga-detail" class="service-detail">
-              <div class="glass-card p-8 rounded-xl">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">
-                  Google Analytics
-                </h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Setup e Implementación:</strong> Configuramos GA4
-                      desde cero o migramos Universal Analytics sin perder datos
-                      históricos.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Enhanced Ecommerce:</strong> Implementamos el
-                      funnel de compra y tracking de transacciones para medir el
-                      ROI.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Eventos y Conversiones:</strong> Creamos eventos
-                      estratégicos y optimizamos el tracking de conversiones
-                      clave.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Audiencias y Segmentación:</strong> Creamos
-                      audiencias predictivas con machine learning para
-                      remarketing y activación.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Reporting y Dashboards:</strong> Integramos
-                      herramientas de BI para crear dashboards y reportes
-                      personalizados.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Data Export y APIs:</strong> Conectamos GA4 con
-                      BigQuery y otras plataformas vía API para la exportación
-                      de datos.</span
-                    >
-                  </li>
-                </ul>
-                <p
-                  class="mt-4 text-cyan-300 cursor-pointer hover:text-cyan-100 font-semibold open-bot2-chat"
-                >
-                  » ¿Preguntas sobre este servicio? Chatea con nuestro asistente
-                  técnico.
-                </p>
-              </div>
+
+            <!-- Google Analytics -->
+            <div
+              class="glass-card p-8 rounded-2xl bg-slate-800/60 backdrop-blur-md hover:bg-slate-800/80 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-bold text-cyan-400 mb-4">
+                Google Analytics
+              </h3>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>✓ Setup de GA4 o migración desde Universal.</li>
+                <li>✓ Enhanced Ecommerce y funnels de compra.</li>
+                <li>✓ Eventos y conversiones personalizadas.</li>
+                <li>✓ Audiencias predictivas con machine learning.</li>
+                <li>✓ Reporting y dashboards personalizados.</li>
+                <li>✓ Conexión con BigQuery y APIs de datos.</li>
+              </ul>
             </div>
-            <div id="ads-detail" class="service-detail mt-16">
-              <div class="glass-card p-8 rounded-xl">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">
-                  Plataformas Publicitarias
-                </h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Tracking de Conversiones:</strong> Configuramos
-                      el tracking de conversiones en Google Ads, Meta Ads,
-                      TikTok, y más plataformas.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Enhanced Conversions:</strong> Implementamos
-                      conversiones mejoradas para mayor precisión en el tracking
-                      y optimización de campañas.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Remarketing Avanzado:</strong> Creamos audiencias
-                      dinámicas y listas de remarketing inteligentes basadas en
-                      comportamiento del usuario.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>API de Conversiones:</strong> Implementamos
-                      tracking server-side para superar las limitaciones de
-                      cookies y mejorar la precisión.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Optimización de Campañas:</strong> Analizamos y
-                      optimizamos tus campañas publicitarias para maximizar el
-                      ROAS.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Reporting Unificado:</strong> Consolidamos datos
-                      de todas tus plataformas en dashboards integrales para
-                      decisiones informadas.</span
-                    >
-                  </li>
-                </ul>
-                <p
-                  class="mt-4 text-cyan-300 cursor-pointer hover:text-cyan-100 font-semibold open-bot2-chat"
-                >
-                  » ¿Preguntas sobre este servicio? Chatea con nuestro asistente
-                  técnico.
-                </p>
-              </div>
+
+            <!-- Plataformas Publicitarias -->
+            <div
+              class="glass-card p-8 rounded-2xl bg-slate-800/60 backdrop-blur-md hover:bg-slate-800/80 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-bold text-cyan-400 mb-4">
+                Plataformas Publicitarias
+              </h3>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>✓ Tracking de conversiones en Ads y Meta.</li>
+                <li>✓ Enhanced Conversions para mayor precisión.</li>
+                <li>✓ Remarketing avanzado y audiencias dinámicas.</li>
+                <li>✓ API de conversiones y server-side tracking.</li>
+                <li>✓ Optimización y reporting unificado.</li>
+              </ul>
             </div>
-            <div id="seo-detail" class="service-detail">
-              <div class="glass-card p-8 rounded-xl">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">SEO</h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Auditoría SEO Completa:</strong> Análisis
-                      profundo de tu sitio web para identificar oportunidades de
-                      mejora técnica y de contenido.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>SEO Técnico:</strong> Optimización de velocidad,
-                      estructura, crawlability, y Core Web Vitals para mejor
-                      ranking.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Keyword Research:</strong> Investigación y
-                      estrategia de palabras clave para captar tráfico de alta
-                      intención.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Content Strategy:</strong> Desarrollo de
-                      estrategia de contenido optimizada para SEO y
-                      conversión.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Link Building:</strong> Construcción de autoridad
-                      mediante enlaces de calidad y estrategias de PR
-                      digital.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Monitoreo y Reporting:</strong> Seguimiento
-                      continuo de rankings, tráfico orgánico y KPIs con reportes
-                      detallados.</span
-                    >
-                  </li>
-                </ul>
-                <p
-                  class="mt-4 text-cyan-300 cursor-pointer hover:text-cyan-100 font-semibold open-bot2-chat"
-                >
-                  » ¿Preguntas sobre este servicio? Chatea con nuestro asistente
-                  técnico.
-                </p>
-              </div>
+
+            <!-- SEO -->
+            <div
+              class="glass-card p-8 rounded-2xl bg-slate-800/60 backdrop-blur-md hover:bg-slate-800/80 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-bold text-cyan-400 mb-4">SEO</h3>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>✓ Auditoría técnica y de contenido.</li>
+                <li>✓ Optimización de velocidad y estructura.</li>
+                <li>✓ Estrategia de palabras clave.</li>
+                <li>✓ Creación de contenido optimizado.</li>
+                <li>✓ Link Building y autoridad digital.</li>
+                <li>✓ Monitoreo de rankings y KPIs.</li>
+              </ul>
             </div>
-            <div id="crm-detail" class="service-detail">
-              <div class="glass-card p-8 rounded-xl">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">
-                  CRM & Lead Intelligence
-                </h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Implementación de CRM:</strong> Configuramos e
-                      integramos plataformas CRM como HubSpot, Salesforce, y
-                      Zoho.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Lead Scoring:</strong> Desarrollamos modelos de
-                      scoring para priorizar leads de mayor valor y probabilidad
-                      de conversión.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Marketing Automation:</strong> Automatizamos
-                      workflows de nurturing y seguimiento para maximizar la
-                      conversión.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Enriquecimiento de Datos:</strong> Integramos
-                      fuentes de datos para enriquecer perfiles de leads con
-                      información relevante.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Análisis Predictivo:</strong> Aplicamos modelos
-                      de ML para predecir comportamiento y optimizar estrategias
-                      de ventas.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Integración Omnicanal:</strong> Conectamos todos
-                      tus canales para una vista 360° del customer
-                      journey.</span
-                    >
-                  </li>
-                </ul>
-                <p
-                  class="mt-4 text-cyan-300 cursor-pointer hover:text-cyan-100 font-semibold open-bot2-chat"
-                >
-                  » ¿Preguntas sobre este servicio? Chatea con nuestro asistente
-                  técnico.
-                </p>
-              </div>
+
+            <!-- CRM -->
+            <div
+              class="glass-card p-8 rounded-2xl bg-slate-800/60 backdrop-blur-md hover:bg-slate-800/80 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-bold text-cyan-400 mb-4">
+                CRM & Lead Intelligence
+              </h3>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>✓ Implementación e integración de CRM.</li>
+                <li>✓ Modelos de Lead Scoring personalizados.</li>
+                <li>✓ Automatización de marketing y nurturing.</li>
+                <li>✓ Enriquecimiento de datos y análisis predictivo.</li>
+                <li>✓ Integración omnicanal.</li>
+              </ul>
             </div>
-            <div id="asesorias-detail" class="service-detail">
-              <div class="glass-card p-8 rounded-xl">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">
-                  Asesorías Personalizadas
-                </h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Consultoría Estratégica:</strong> Sesiones
-                      personalizadas para definir estrategias de datos y
-                      marketing digital alineadas a tus objetivos.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Análisis de Ecosistema:</strong> Evaluamos tu
-                      stack tecnológico y procesos actuales para identificar
-                      oportunidades de mejora.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Roadmap Personalizado:</strong> Desarrollamos
-                      hojas de ruta detalladas con prioridades y timelines
-                      realistas.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Soporte Continuo:</strong> Disponibilidad para
-                      consultas recurrentes y apoyo en la implementación de
-                      estrategias.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Best Practices:</strong> Aplicamos las mejores
-                      prácticas de la industria adaptadas a tu contexto
-                      específico.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Sesiones según demanda:</strong> Flexibilidad
-                      para agendar sesiones según tus necesidades y
-                      disponibilidad.</span
-                    >
-                  </li>
-                </ul>
-                <p
-                  class="mt-4 text-cyan-300 cursor-pointer hover:text-cyan-100 font-semibold open-bot2-chat"
-                >
-                  » ¿Preguntas sobre este servicio? Chatea con nuestro asistente
-                  técnico.
-                </p>
-              </div>
-            </div>
-            <div id="capacitaciones-detail" class="service-detail">
-              <div class="glass-card p-8 rounded-xl">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">
-                  Capacitaciones
-                </h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Workshops Personalizados:</strong> Sesiones de
-                      formación adaptadas a las necesidades específicas de tu
-                      equipo.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Google Analytics & GTM:</strong> Capacitaciones
-                      desde nivel básico hasta avanzado en herramientas de
-                      Google.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Data Analytics:</strong> Formación en análisis de
-                      datos, visualización, y toma de decisiones basadas en
-                      datos.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Modalidad Flexible:</strong> Presencial, remoto,
-                      o híbrido según tus preferencias y disponibilidad.</span
-                    >
-                  </li>
-                </ul>
-                <p
-                  class="mt-4 text-cyan-300 cursor-pointer hover:text-cyan-100 font-semibold open-bot2-chat"
-                >
-                  » ¿Preguntas sobre este servicio? Chatea con nuestro asistente
-                  técnico.
-                </p>
-              </div>
-            </div>
-            <div id="productos-detail" class="service-detail">
-              <div class="glass-card p-8 rounded-xl">
-                <h3 class="text-2xl font-bold text-cyan-400 mb-4">Productos</h3>
-                <ul class="space-y-3 text-gray-300">
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Dashboards Personalizados:</strong> Obtén
-                      dashboards a medida, desarrollados en Looker Studio, Power
-                      BI o Tableau para visualizar tus datos clave.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Scripts y Automatizaciones:</strong> Automatiza
-                      tus procesos de análisis y tareas repetitivas mediante el
-                      desarrollo de scripts personalizados.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Sistema de Monitoreo:</strong> Implementa un
-                      monitoreo 24/7 de tus métricas clave y recibe alertas
-                      automáticas para corregir desvíos a tiempo.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Chatbot:</strong> Implementa un asistente técnico
-                      personalizado para tu sitio web o WhatsApp y mejora la
-                      atención al cliente.</span
-                    >
-                  </li>
-                  <li class="flex items-start">
-                    ✓
-                    <span class="ml-2"
-                      ><strong>Otros Productos:</strong> Solicita el desarrollo
-                      de soluciones a medida, creadas específicamente para las
-                      necesidades de tu negocio.</span
-                    >
-                  </li>
-                </ul>
-                <p
-                  class="mt-4 text-cyan-300 cursor-pointer hover:text-cyan-100 font-semibold open-bot2-chat"
-                >
-                  » ¿Preguntas sobre este servicio? Chatea con nuestro asistente
-                  técnico.
-                </p>
-              </div>
+
+            <!-- Capacitaciones -->
+            <div
+              class="glass-card p-8 rounded-2xl bg-slate-800/60 backdrop-blur-md hover:bg-slate-800/80 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-bold text-cyan-400 mb-4">
+                Capacitaciones
+              </h3>
+              <ul class="space-y-2 text-gray-300 text-sm">
+                <li>✓ Workshops personalizados para equipos.</li>
+                <li>✓ Capacitación en Google Analytics & GTM.</li>
+                <li>✓ Formación en análisis de datos.</li>
+                <li>✓ Modalidad flexible: presencial o remoto.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -962,7 +535,7 @@
         <div class="container mx-auto px-6">
           <!-- Section Header -->
           <div class="text-center mb-14 max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-extrabold mt-20">
+            <h2 class="text-3xl md:text-5xl font-extrabold pt-10">
               Quiénes Somos
             </h2>
             <div class="mt-4 h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
@@ -1017,7 +590,7 @@
       >
         <div class="container mx-auto px-6">
           <!-- Heading -->
-          <div class="pt-16 border-t border-slate-800 text-center mb-14">
+          <div class="pt-9 border-slate-800 text-center mb-14">
             <h3 class="text-3xl md:text-5xl font-extrabold">
               Prueba nuestras Herramientas de
               <span class="text-cyan-400">IA</span> de forma gratuita
@@ -1091,7 +664,7 @@
           <!-- Heading -->
           <div class="text-center mb-12">
             <h1
-              class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-md mt-20"
+              class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-md pt-10"
             >
               Contáctate con nosotros
             </h1>
