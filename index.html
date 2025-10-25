@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      TrackingDataX | Soluciones Inteligentes con IA y Datos para Marketing
+      Digital
+    </title>
+    <meta
+      name="description"
+      content="TrackingDataX ofrece soluciones en inteligencia artificial, automatización y análisis de datos para potenciar tu marketing digital. Diagnóstico gratuito disponible."
+    />
+
+    <meta
+      name="keywords"
+      content="marketing digital, inteligencia artificial, automatización, análisis de datos, SEO, Google Analytics, CRM, TrackingDataX"
+    />
+
+    <link rel="canonical" href="https://tusitio.com/" />
+
+    <meta
+      property="og:title"
+      content="TrackingDataX | Soluciones Inteligentes con IA y Datos"
+    />
+    <meta
+      property="og:description"
+      content="Potenciamos tu negocio con IA, Datos y Automatización. Diagnóstico gratuito incluido."
+    />
+    <meta property="og:image" content="https://tusitio.com/img/preview.jpg" />
+    <meta property="og:url" content="https://tusitio.com/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="TrackingDataX | IA y Datos para Marketing Digital"
+    />
+    <meta
+      name="twitter:description"
+      content="Optimiza tu marketing con inteligencia artificial y datos."
+    />
+    <meta name="twitter:image" content="https://tusitio.com/img/preview.jpg" />
+    <link rel="icon" type="image/png" href="img/logo.jpeg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="antialiased">
+    <header
+      class="sticky top-0 z-50 bg-opacity-80 backdrop-blur-md border-b border-slate-800"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="#" class="block">
+          <img
+            src="img/logo.jpeg"
+            alt="Logo de TrackingDataX"
+            class="site-logo"
+          />
+        </a>
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="menu-btn"
+          class="block md:hidden text-cyan-400 focus:outline-none text-3xl"
+        >
+          ☰
+        </button>
+
+        <!-- Navigation -->
+        <nav
+          id="menu"
+          class="hidden md:block absolute md:static top-full left-0 w-full md:w-auto bg-slate-900/95 md:bg-transparent backdrop-blur-md md:backdrop-blur-none border-t md:border-none border-slate-700 md:border-0 transition-all duration-300"
+        >
+          <ul
+            class="flex flex-col md:flex-row items-center md:space-x-8 space-y-4 md:space-y-0 py-4 md:py-0"
+          >
+            <li>
+              <a
+                href="#servicios"
+                class="text-gray-300 hover:text-cyan-400 transition-colors"
+                >Servicios</a
+              >
+            </li>
+            <li>
+              <a
+                href="#como-trabajamos"
+                class="text-gray-300 hover:text-cyan-400 transition-colors"
+                >Casos de Éxito</a
+              >
+            </li>
+            <li>
+              <a
+                href="#nuestro-adn"
+                class="text-gray-300 hover:text-cyan-400 transition-colors"
+                >Quiénes Somos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#herramientas-ia"
+                id="cta-bot1-nav"
+                class="text-gray-300 hover:text-cyan-400 transition-colors"
+                >Diagnóstico Gratuito</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contacto"
+                class="cta-button bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded-md transition-colors"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+      <section
+        id="hero"
+        class="relative overflow-hidden py-24 md:py-32 text-center"
+      >
+        <!-- Background animation layer -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900"
+        >
+          <div
+            class="absolute inset-0 animate-gradient bg-[radial-gradient(circle_at_center,_rgba(34,211,238,0.15)_0%,_transparent_60%)]"
+          ></div>
+          <div class="absolute inset-0">
+            <canvas id="particles"></canvas>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative container mx-auto px-6">
+          <h1
+            class="text-4xl md:text-6xl font-black leading-tight mb-4 text-white drop-shadow-lg"
+          >
+            Soluciones Inteligentes con Datos para
+            <br class="hidden md:block" />
+            <span class="text-cyan-400">Marketing Digital</span>
+          </h1>
+          <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+            Potenciamos tu Negocio con IA, Datos y Procesos Automatizados.
+          </p>
+          <a
+            href="#contacto"
+            class="cta-button bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-3 px-6 rounded-md text-lg shadow-lg transition-transform transform hover:scale-105"
+          >
+            Contáctanos
+          </a>
+        </div>
+      </section>
+
+      <!-- Servicios -->
+      <section id="servicios" class="relative py-20 overflow-hidden">
+        <!-- Background Gradient -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900"
+        ></div>
+
+        <div class="relative container mx-auto px-6">
+          <!-- Heading -->
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">
+              Nuestros <span class="text-cyan-400">Servicios</span> y Productos
+            </h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+              Soluciones integrales para impulsar tu ecosistema digital.
+            </p>
+          </div>
+
+          <!-- Scrolling Cards Container -->
+          <div class="relative">
+            <div class="overflow-hidden">
+              <div class="flex gap-6 md:gap-8 animate-scroll">
+                <!-- Duplicate set for seamless scroll -->
+                <div class="flex gap-6 md:gap-8">
+                  <div class="glass-card"><h3>Google Tag Manager</h3></div>
+                  <div class="glass-card"><h3>Google Analytics</h3></div>
+                  <div class="glass-card">
+                    <h3>Plataformas Publicitarias</h3>
+                  </div>
+                  <div class="glass-card"><h3>SEO</h3></div>
+                  <div class="glass-card"><h3>CRM & Lead Intelligence</h3></div>
+                  <div class="glass-card">
+                    <h3>Asesorías Personalizadas</h3>
+                  </div>
+                  <div class="glass-card"><h3>Capacitaciones</h3></div>
+                  <div class="glass-card"><h3>Productos</h3></div>
+                </div>
+                <div class="flex gap-6 md:gap-8">
+                  <div class="glass-card"><h3>Google Tag Manager</h3></div>
+                  <div class="glass-card"><h3>Google Analytics</h3></div>
+                  <div class="glass-card">
+                    <h3>Plataformas Publicitarias</h3>
+                  </div>
+                  <div class="glass-card"><h3>SEO</h3></div>
+                  <div class="glass-card"><h3>CRM & Lead Intelligence</h3></div>
+                  <div class="glass-card">
+                    <h3>Asesorías Personalizadas</h3>
+                  </div>
+                  <div class="glass-card"><h3>Capacitaciones</h3></div>
+                  <div class="glass-card"><h3>Productos</h3></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="como-trabajamos"
+        class="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white"
+      >
+        <div class="container mx-auto px-6">
+          <!-- Heading -->
+          <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-5xl font-extrabold">Casos de Éxito</h2>
+            <p class="text-gray-400 mt-3 max-w-2xl mx-auto text-lg">
+              Resultados reales que generamos para nuestros clientes.
+            </p>
+            <div class="mt-6 h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
+          </div>
+
+          <!-- Case Studies Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+            <!-- Card 1 -->
+            <div
+              class="group bg-slate-900/60 border border-slate-700/50 p-8 rounded-2xl shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 flex flex-col"
+            >
+              <div class="flex items-center gap-4">
+                <div class="bg-cyan-900/50 p-3 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-cyan-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold">E-commerce</h3>
+                  <p class="text-sm text-gray-400">
+                    Optimización de Publicidad Digital
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-300 my-6 leading-relaxed">
+                En solo 2 meses, implementamos un sistema de medición avanzado
+                con GTM y GA4 para identificar las campañas más rentables. Con
+                un algoritmo de optimización, redistribuimos inversión logrando
+                mejores resultados con menor presupuesto.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-slate-700 flex justify-around text-center"
+              >
+                <div>
+                  <p
+                    class="text-4xl font-bold text-cyan-400 group-hover:scale-110 transition-transform"
+                  >
+                    +30%
+                  </p>
+                  <p class="text-sm text-gray-400 mt-1">Ventas Online</p>
+                </div>
+                <div>
+                  <p
+                    class="text-4xl font-bold text-cyan-400 group-hover:scale-110 transition-transform"
+                  >
+                    +35%
+                  </p>
+                  <p class="text-sm text-gray-400 mt-1">ROAS</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="group bg-slate-900/60 border border-slate-700/50 p-8 rounded-2xl shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 flex flex-col"
+            >
+              <div class="flex items-center gap-4">
+                <div class="bg-cyan-900/50 p-3 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-cyan-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold">Servicios B2B</h3>
+                  <p class="text-sm text-gray-400">
+                    Generación de Leads de Calidad
+                  </p>
+                </div>
+              </div>
+              <p class="text-gray-300 my-6 leading-relaxed">
+                Ajustamos tracking y segmentación integrando CRM con plataformas
+                publicitarias. Optimizamos campañas por conversiones reales y
+                automatizamos lead scoring, acortando ciclos de venta y
+                maximizando ROI.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-slate-700 flex justify-around text-center"
+              >
+                <div>
+                  <p
+                    class="text-4xl font-bold text-cyan-400 group-hover:scale-110 transition-transform"
+                  >
+                    +45%
+                  </p>
+                  <p class="text-sm text-gray-400 mt-1">Leads Cualificados</p>
+                </div>
+                <div>
+                  <p
+                    class="text-4xl font-bold text-cyan-400 group-hover:scale-110 transition-transform"
+                  >
+                    -35%
+                  </p>
+                  <p class="text-sm text-gray-400 mt-1">Costo por Lead</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="group bg-slate-900/60 border border-slate-700/50 p-8 rounded-2xl shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 flex flex-col"
+            >
+              <div class="flex items-center gap-4">
+                <div class="bg-cyan-900/50 p-3 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-cyan-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold">Consultora</h3>
+                  <p class="text-sm text-gray-400">Sistema de Alarmas</p>
+                </div>
+              </div>
+              <p class="text-gray-300 my-6 leading-relaxed">
+                Desarrollamos un sistema de monitoreo 24/7 con alertas basadas
+                en detección de anomalías. Permite reacción inmediata ante
+                desvíos críticos, optimizando presupuesto y eficiencia
+                operativa.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-slate-700 flex justify-around text-center"
+              >
+                <div>
+                  <p
+                    class="text-4xl font-bold text-cyan-400 group-hover:scale-110 transition-transform"
+                  >
+                    +70%
+                  </p>
+                  <p class="text-sm text-gray-400 mt-1">Tiempo de Reacción</p>
+                </div>
+                <div>
+                  <p
+                    class="text-4xl font-bold text-cyan-400 group-hover:scale-110 transition-transform"
+                  >
+                    +60%
+                  </p>
+                  <p class="text-sm text-gray-400 mt-1">
+                    Detección de Anomalías
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="group bg-slate-900/60 border border-slate-700/50 p-8 rounded-2xl shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 flex flex-col"
+            >
+              <div class="flex items-center gap-4">
+                <div class="bg-cyan-900/50 p-3 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-cyan-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold">Agencia de Marketing</h3>
+                  <p class="text-sm text-gray-400">Reportería Automatizada</p>
+                </div>
+              </div>
+              <p class="text-gray-300 my-6 leading-relaxed">
+                Creamos dashboards interactivos con análisis completo del
+                funnel, automatizando extracción y unificación de datos desde
+                múltiples plataformas. Redujimos el tiempo de análisis de días a
+                minutos.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-slate-700 flex justify-around text-center"
+              >
+                <div>
+                  <p
+                    class="text-4xl font-bold text-cyan-400 group-hover:scale-110 transition-transform"
+                  >
+                    15+
+                  </p>
+                  <p class="text-sm text-gray-400 mt-1">
+                    Clientes Automatizados
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-4xl font-bold text-cyan-400 group-hover:scale-110 transition-transform"
+                  >
+                    -40h
+                  </p>
+                  <p class="text-sm text-gray-400 mt-1">Trabajo Manual/Mes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="nuestro-adn"
+        class="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white"
+      >
+        <div class="container mx-auto px-6">
+          <!-- Section Header -->
+          <div class="text-center mb-14 max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-extrabold">Quiénes Somos</h2>
+            <div class="mt-4 h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
+            <p class="text-lg text-gray-400 mt-6">
+              Potenciamos tu Negocio con
+              <span class="text-cyan-400"
+                >IA, Datos y Procesos Automatizados</span
+              >.
+            </p>
+          </div>
+
+          <!-- Content -->
+          <div class="max-w-4xl mx-auto">
+            <div
+              class="space-y-8 text-lg text-gray-300 leading-relaxed animate-fade-in"
+            >
+              <p>
+                Somos un equipo con más de
+                <span class="text-cyan-400 font-semibold"
+                  >15 años de experiencia</span
+                >
+                en datos, herramientas e inteligencia artificial aplicados al
+                marketing digital. Ofrecemos servicios, capacitaciones y
+                productos especializados en medición, análisis, configuración y
+                automatización, diseñados para cumplir con las metas de nuestros
+                clientes.
+              </p>
+
+              <p>
+                Nuestro equipo está conformado por
+                <span class="text-cyan-400 font-semibold"
+                  >actuarios, licenciados en administración, científicos de
+                  datos y especialistas en marketing</span
+                >, combinando expertise técnico con una visión estratégica del
+                negocio digital.
+              </p>
+
+              <p>
+                Nos mantenemos a la vanguardia, explorando nuevas tecnologías y
+                aprovechando el poder de los datos y la IA para optimizar la
+                toma de decisiones y generar resultados medibles y sostenibles
+                para cada organización con la que trabajamos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="herramientas-ia"
+        class="relative py-24 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden"
+      >
+        <div class="container mx-auto px-6">
+          <!-- Heading -->
+          <div class="pt-16 border-t border-slate-800 text-center mb-14">
+            <h3 class="text-3xl md:text-5xl font-extrabold">
+              Prueba nuestras Herramientas de
+              <span class="text-cyan-400">IA</span> de forma gratuita
+            </h3>
+            <div
+              class="mt-4 h-1 w-24 bg-cyan-500 mx-auto rounded-full animate-pulse"
+            ></div>
+          </div>
+
+          <!-- Tools Grid -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-12 text-left animate-fade-in"
+          >
+            <!-- Tool 1 -->
+            <div
+              class="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-cyan-500 transition-all duration-300"
+            >
+              <h4 class="text-xl font-semibold mb-4 text-cyan-400">
+                Diagnóstico de Landing Page
+              </h4>
+              <p class="text-gray-400 mb-6 leading-relaxed">
+                Tu sitio podría tener problemas de conversión fácilmente
+                detectables. Obtén un análisis global gratuito de tu landing
+                page y descubre oportunidades de mejora inmediatas para aumentar
+                resultados.
+              </p>
+              <iframe
+                src="https://n8n-n8n.rqatzf.easypanel.host/form/0818531a-3892-49f6-af78-cde8d538b205"
+                class="embedded-form w-full h-[400px] rounded-lg border border-slate-700 hover:border-cyan-500 transition-all"
+                title="Herramienta de Diagnóstico de Sitios Web"
+              ></iframe>
+            </div>
+
+            <!-- Tool 2 -->
+            <div
+              class="bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-cyan-500 transition-all duration-300"
+            >
+              <h4 class="text-xl font-semibold mb-4 text-cyan-400">
+                Evaluación de Madurez Digital
+              </h4>
+              <p class="text-gray-400 mb-6 leading-relaxed">
+                ¿Estás tomando decisiones de marketing basadas en datos o en
+                intuición? Evaluá gratis el nivel de madurez digital de tu
+                empresa. Descubrí qué herramientas y procesos te faltan para
+                crecer. Diagnóstico personalizado en minutos.
+              </p>
+              <iframe
+                src="https://n8n-n8n.rqatzf.easypanel.host/form/0818531a-3892-49f6-af78-cde8d538b205"
+                class="embedded-form w-full h-[400px] rounded-lg border border-slate-700 hover:border-cyan-500 transition-all"
+                title="Herramienta de Madurez en Marketing Digital"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contacto"
+        class="relative py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900"
+      >
+        <div class="absolute inset-0 overflow-hidden">
+          <div
+            class="absolute -top-32 -right-32 w-96 h-96 bg-cyan-600/20 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-72 h-72 bg-cyan-400/10 rounded-full blur-3xl"
+          ></div>
+        </div>
+
+        <div class="relative container mx-auto px-6">
+          <!-- Heading -->
+          <div class="text-center mb-12">
+            <h1
+              class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-md"
+            >
+              Contáctate con nosotros
+            </h1>
+            <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
+              <a
+                href="#"
+                class="text-cyan-400 hover:text-cyan-300 font-semibold open-bot2-chat"
+              >
+                Chatea con nuestro asistente técnico
+              </a>
+              ó completa el formulario a continuación.
+            </p>
+          </div>
+
+          <!-- Contact Form -->
+          <div
+            class="max-w-lg mx-auto backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl shadow-2xl p-8 sm:p-10"
+          >
+            <form action="#" method="POST" class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-300 mb-1"
+                >
+                  Nombre
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Tu nombre completo"
+                  class="w-full bg-slate-800/70 border border-slate-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-300 mb-1"
+                >
+                  Email de Empresa
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="nombre@empresa.com"
+                  class="w-full bg-slate-800/70 border border-slate-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-300 mb-1"
+                >
+                  Cuéntanos brevemente en qué podemos ayudarte
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Escribe tu mensaje aquí..."
+                  class="w-full bg-slate-800/70 border border-slate-700 rounded-lg py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-cyan-500 hover:bg-cyan-400 text-white font-semibold text-lg py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-cyan-500/20"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-900 border-t border-slate-800 relative z-20">
+      <div class="container mx-auto py-5 px-6 text-gray-400">
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm"
+        >
+          <p class="text-center sm:text-left">
+            &copy; 2025 TrackingDataX. Todos los derechos reservados.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+            <div class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <span>Uruguay 645, CABA, Argentina.</span>
+            </div>
+
+            <div class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <span>info@trackingdatax.com</span>
+            </div>
+
+            <a
+              href="https://www.linkedin.com/company/107879580/admin/dashboard/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block hover:text-cyan-400 transition-colors"
+            >
+              <span class="sr-only">LinkedIn</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/WayneSimpson/n8n-chatbot-template@ba944c3/chat-widget.js"></script>
+
+    <div id="progress">
+      <span id="progress-value">↑</span>
+    </div>
+
+    <!-- Scroll to Top Script -->
+    <script>
+      const progress = document.getElementById("progress");
+      const progressValue = document.getElementById("progress-value");
+
+      window.addEventListener("scroll", () => {
+        let scrollTop = window.scrollY;
+        let docHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        let scrollPercent = (scrollTop / docHeight) * 100;
+
+        // Circle fill update
+        progress.style.background = `conic-gradient(#00ffff ${scrollPercent}%, #333 ${scrollPercent}%)`;
+
+        // Show after 100px scroll
+        if (scrollTop > 100) {
+          progress.classList.add("show");
+        } else {
+          progress.classList.remove("show");
+        }
+      });
+
+      // Smooth scroll to top
+      progress.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "TrackingDataX",
+        "url": "https://tusitio.com/",
+        "logo": "https://tusitio.com/img/logo.jpeg",
+        "sameAs": [
+          "https://www.linkedin.com/company/trackingdatax",
+          "https://www.facebook.com/trackingdatax"
+        ]
+      }
+    </script>
+
+    <div id="scroll-progress"></div>
+  </body>
+</html>
