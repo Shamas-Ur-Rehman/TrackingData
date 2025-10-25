@@ -168,12 +168,13 @@
       <section id="servicios" class="py-16 bg-slate-900/50">
         <div class="container mx-auto px-6">
           <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold mt-20">
+            <h2 class="text-3xl md:text-5xl font-extrabold mt-20">
               Nuestros Servicios y Productos
             </h2>
             <p class="text-gray-400 mt-2">
               Soluciones integrales para tu ecosistema digital.
             </p>
+            <div class="mt-4 h-1 w-20 bg-cyan-500 mx-auto rounded-full"></div>
           </div>
           <div
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
@@ -196,6 +197,7 @@
             >
               <h3 class="text-lg font-semibold">Plataformas Publicitarias</h3>
             </div>
+            <!-- SEO Button -->
             <div
               class="glass-card p-6 rounded-xl text-center cursor-pointer"
               data-target="#seo-detail"
@@ -355,7 +357,7 @@
                 </p>
               </div>
             </div>
-            <div id="ads-detail" class="service-detail">
+            <div id="ads-detail" class="service-detail mt-16">
               <div class="glass-card p-8 rounded-xl">
                 <h3 class="text-2xl font-bold text-cyan-400 mb-4">
                   Plataformas Publicitarias
@@ -1286,6 +1288,26 @@
     <div id="progress">
       <span id="progress-value">↑</span>
     </div>
+
+    <script>
+      document.querySelectorAll("[data-target]").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const targetId = this.getAttribute("data-target");
+          const target = document.querySelector(targetId);
+
+          if (target) {
+            const offset = 80; // adjust this if you have a fixed navbar height
+            const topPosition =
+              target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+            window.scrollTo({
+              top: topPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
 
     <!-- Scroll to Top Script -->
     <script>
